@@ -17,5 +17,7 @@ jobs:
         with: 
           node-version: 24 
       - name: Install 
-        run: npm install 
+        run: npm ci 
+      - name: Compile 
+        run: npm run build 
       
