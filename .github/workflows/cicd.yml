@@ -1,0 +1,21 @@
+name: Normal Lab 
+
+on:
+  push: 
+    branches:
+      - main 
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6 
+      - name: Set up node 
+        uses: actions/setup-node@v6 
+        with: 
+          node-version: 24 
+      - name: Install 
+        run: npm install 
+      

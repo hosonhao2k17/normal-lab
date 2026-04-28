@@ -1,0 +1,9 @@
+
+
+
+services:
+  app:
+    build: .
+    environment:
+      HELLO: Xin Chao  
+    
